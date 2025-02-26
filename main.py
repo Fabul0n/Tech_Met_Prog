@@ -1,51 +1,58 @@
 from datetime import datetime
-from pydantic import BaseModel
-from schemas.custom_file import CustomFile as CustomFileSchema
-from schemas.mp4_file import Mp4File as Mp4FileSchema
-from schemas.txt_file import TxtFile as TxtFileSchema
-from abc import abstractmethod
+from pydantic import BaseModel, field_validator, ValidationError, ConfigDict
+import json
 
 
 
-class CustomFile[T: BaseModel](BaseModel):
-    def __init__(self):
-        self.name: str | None = None
-        self.creation_date: datetime | None = None
-        self.size: int | None = None
+class CustomFile(BaseModel):
+    name: str
+    creation_date: datetime
+    size: int
+
+    @field_validator('creation_date')
+    def check_date(cls, value: datetime):
+        return value.strftime('%Y.%m.%d')
+    
+    model_config = ConfigDict(extra='forbid')
 
     
-class TxtFile(CustomFile[TxtFileSchema]):
-    def __init__(self, lines_count, words_count):
-        super().__init__()
-        self.lines_count = lines_count,
-        self.words_count = words_count
-
-    def from_dict(self, source: TxtFileSchema) -> None:
-        self.name = source.name
-        self.creation_date = source.creation_date
-        self.size = source.size
-        self.lines_count = source.lines_count
-        self.words_count = source.words_count
-
-    def to_dict(self) -> dict:
-        return {
-            "name": self.name,
-            "creation_date": self.creation_date,
-            "size": self.size,
-            "lines_count": self.lines_count,
-            "words_count": self.words_count
-        }
+class TxtFile(CustomFile):
+    lines_count: int
+    words_count: int
 
 
-class MP4File(CustomFile[Mp4FileSchema]):
-    def __init__(self, duration, resolution):
-        super().__init__()
-        self.duration: int = duration
-        self.resolution: int = resolution
+class MP4File(CustomFile):
+    duration: int
+    resolution: str
 
-    def from_dict(self, source: Mp4FileSchema) -> None:
-        self.name = source.name
-        self.creation_date = source.creation_date
-        self.size = source.size
-        self.duration = source.duration
-        self.resolution = source.resolution
+    @field_validator('resolution')
+    def check_resolution(cls, value: str):
+        ls = value.split('x')
+        try:
+            if len(ls) == 2 and int(ls[0]) == float(ls[0]) and int(ls[1]) == float(ls[1]):
+                return value
+        except Exception:
+            e = ValidationError()
+            e.add_note("Resolution must have <int>x<int> format")
+            raise e
+
+def parse_json(filename: str):
+    ls: list[CustomFile] = []
+    with open(filename, 'r') as f:
+        json_str: dict = json.loads(f.read())
+        for key, value in json_str.items():
+            try:
+                ls.append(MP4File(**value))
+            except ValidationError:
+                try:
+                    ls.append(TxtFile(**value))
+                except ValidationError:
+                    try:
+                        ls.append(CustomFile(**value))
+                    except ValidationError:
+                        print(value)
+    return ls
+                
+
+
+print(parse_json('example.json'))

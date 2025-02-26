@@ -1,0 +1,21 @@
+{
+    "file1": {
+        "name": "habsd",
+        "creation_date": "2024-04-12",
+        "size": 12342
+    },
+    "file2": {
+        "name": "kjasdasd",
+        "creation_date": "2024-12-05",
+        "size": 4123,
+        "lines_count": 12,
+        "words_count": 1200
+    },
+    "file3": {
+        "name": "ojnasd",
+        "creation_date": "2024-05-12",
+        "size": 4124,
+        "duration": 412442
+        
+    }
+}

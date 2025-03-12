@@ -1,15 +1,4 @@
 from PyQt6.QtWidgets import QDialog, QFormLayout, QLineEdit, QDialogButtonBox
-from enum import Enum
-
-class Fields(Enum):
-    name = 'Название файла'
-    creation_date = 'Дата создания'
-    size = 'Размер'
-    words_count = 'Количество слов'
-    lines_count = 'Количество строк'
-    duration = 'Длительность'
-    resolution = 'Разрешение'
-
 
 class AddFromFileDialog(QDialog):
     def __init__(self, file_type, parent=None):
@@ -59,10 +48,3 @@ class AddFromFileDialog(QDialog):
             data["duration"] = self.duration_input.text()
             data["resolution"] = self.resolution_input.text()
         return data
-
-    def validate_data(self):
-        data = self.get_data()
-        for key, value in data.items():
-            if not value:
-                return False, f"Поле '{Fields[key].value}' не может быть пустым."
-        return True, ""

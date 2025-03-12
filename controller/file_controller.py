@@ -7,12 +7,13 @@ from model.file_models import CustomFile, TxtFile, MP4File
 from model.file_parser import parse_json
 from model.form_validator import validate_data
 from view.add_from_file_dialog import AddFromFileDialog
+from view.main_window import MainWindow
 
 
 
 class FileController:
     def __init__(self, view):
-        self.view = view
+        self.view: MainWindow = view
         self.files: list[CustomFile] = []
 
     def add_manually(self):

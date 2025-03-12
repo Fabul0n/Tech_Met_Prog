@@ -1,5 +1,5 @@
 from datetime import datetime
-from pydantic import BaseModel, field_validator, ValidationError, ConfigDict
+from pydantic import BaseModel, field_validator, ValidationError, ConfigDict, computed_field
 
 
 class CustomFile(BaseModel):
@@ -7,10 +7,14 @@ class CustomFile(BaseModel):
     creation_date: datetime
     size: int
 
-    @field_validator('creation_date')
-    def check_date(cls, value: datetime):
-        return value.strftime('%Y.%m.%d')
+    @field_validator('creation_date', mode='before')
+    def check_date(cls, value: str):
+        return datetime.strptime(value, '%Y.%m.%d')
     
+    @property
+    def formated_creation_date(self) -> str:
+        return self.__dict__.get('creation_date').strftime('%Y.%m.%d')
+
     model_config = ConfigDict(extra='forbid')
 
     

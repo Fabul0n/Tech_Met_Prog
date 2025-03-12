@@ -1,10 +1,20 @@
 from PyQt6.QtWidgets import QDialog, QFormLayout, QLineEdit, QDialogButtonBox
+from enum import Enum
+
+class Fields(Enum):
+    name = 'Название файла'
+    creation_date = 'Дата создания'
+    size = 'Размер'
+    words_count = 'Количество слов'
+    lines_count = 'Количество строк'
+    duration = 'Длительность'
+    resolution = 'Разрешение'
 
 
 class AddFromFileDialog(QDialog):
     def __init__(self, file_type, parent=None):
         super().__init__(parent)
-        self.setWindowTitle(f"Add {file_type}")
+        self.setWindowTitle(f"Добавить {file_type}")
         self.file_type = file_type
 
         self.name_input = QLineEdit()
@@ -22,16 +32,16 @@ class AddFromFileDialog(QDialog):
         self.button_box.rejected.connect(self.reject)
 
         layout = QFormLayout()
-        layout.addRow("Name:", self.name_input)
-        layout.addRow("Creation Date (YYYY-MM-DD):", self.creation_date_input)
-        layout.addRow("Size:", self.size_input)
+        layout.addRow("Название файла:", self.name_input)
+        layout.addRow("Дата создания (гггг.мм.дд):", self.creation_date_input)
+        layout.addRow("Размер:", self.size_input)
 
         if file_type == "TxtFile":
-            layout.addRow("Lines Count:", self.lines_count_input)
-            layout.addRow("Words Count:", self.words_count_input)
+            layout.addRow("Количество строк:", self.lines_count_input)
+            layout.addRow("Количество слов:", self.words_count_input)
         elif file_type == "MP4File":
-            layout.addRow("Duration:", self.duration_input)
-            layout.addRow("Resolution (e.g., 1920x1080):", self.resolution_input)
+            layout.addRow("Длительность:", self.duration_input)
+            layout.addRow("Разрешение (н-р, 1920x1080):", self.resolution_input)
 
         layout.addWidget(self.button_box)
         self.setLayout(layout)
@@ -54,5 +64,5 @@ class AddFromFileDialog(QDialog):
         data = self.get_data()
         for key, value in data.items():
             if not value:
-                return False, f"Field '{key}' cannot be empty."
+                return False, f"Поле '{Fields[key].value}' не может быть пустым."
         return True, ""

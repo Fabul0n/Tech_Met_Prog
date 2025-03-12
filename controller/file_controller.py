@@ -1,10 +1,13 @@
 from datetime import datetime
 from PyQt6.QtWidgets import QFileDialog, QMessageBox, QInputDialog, QDialog, QMainWindow
 from pydantic import ValidationError
+from enum import Enum
 
 from model.file_models import CustomFile, TxtFile, MP4File
 from model.file_parser import parse_json
+from model.form_validator import validate_data
 from view.add_from_file_dialog import AddFromFileDialog
+
 
 
 class FileController:
@@ -18,12 +21,12 @@ class FileController:
         if ok and file_type:
             dialog = AddFromFileDialog(file_type, self.view)
             if dialog.exec() == QDialog.DialogCode.Accepted:
-                is_valid, error_message = dialog.validate_data()
+                data = dialog.get_data()
+                is_valid, error_message = validate_data(data)
                 if not is_valid:
                     QMessageBox.warning(self.view, "Ошибка валидации", error_message)
                     return
 
-                data = dialog.get_data()
                 try:
                     if file_type == "TxtFile":
                         self.files.append(TxtFile(

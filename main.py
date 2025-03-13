@@ -9,9 +9,13 @@ class CustomFile(BaseModel):
     creation_date: datetime
     size: int
 
-    @field_validator('creation_date')
-    def check_date(cls, value: datetime):
-        return value.strftime('%Y.%m.%d')
+    @field_validator('creation_date', mode='before')
+    def check_date(cls, value: str):
+        return datetime.strptime(value, '%Y.%m.%d')
+    
+    @property
+    def formated_creation_date(self):
+        return self.creation_date.strftime('%Y.%m.%d')
     
     model_config = ConfigDict(extra='forbid')
 
@@ -27,7 +31,7 @@ class MP4File(CustomFile):
 
     @field_validator('resolution')
     def check_resolution(cls, value: str):
-        ls = value.split('x')
+        ls: list = value.split('x')
         try:
             if len(ls) == 2 and int(ls[0]) == float(ls[0]) and int(ls[1]) == float(ls[1]):
                 return value
@@ -49,8 +53,8 @@ def parse_json(filename: str):
                 except ValidationError:
                     try:
                         ls.append(CustomFile(**value))
-                    except ValidationError:
-                        print(value)
+                    except ValidationError as e:
+                        print({"Error": value})
     return ls
                 
 

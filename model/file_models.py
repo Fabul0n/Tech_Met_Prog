@@ -1,5 +1,5 @@
 from datetime import datetime
-from pydantic import BaseModel, field_validator, ValidationError, ConfigDict, computed_field
+from pydantic import BaseModel, field_validator, ValidationError, ConfigDict
 
 
 class CustomFile(BaseModel):
@@ -15,7 +15,7 @@ class CustomFile(BaseModel):
     def formated_creation_date(self) -> str:
         return self.__dict__.get('creation_date').strftime('%Y.%m.%d')
 
-    model_config = ConfigDict(extra='forbid')
+    model_config = ConfigDict(extra='forbid', json_encoders={datetime: lambda dt: dt.strftime('%Y.%m.%d')})
 
     
 class TxtFile(CustomFile):

@@ -8,7 +8,7 @@ from model.file_parser import parse_json
 from model.form_validator import validate_data
 from view.add_from_file_dialog import AddFromFileDialog
 from view.main_window import MainWindow
-
+from model.save_to import save_to_json, save_to_file
 
 
 class FileController:
@@ -70,3 +70,8 @@ class FileController:
             self.view.update_table(self.files)
         else:
             QMessageBox.warning(self.view, "Внимание", "Поле не выбрано")
+
+    def save_to_file(self):
+        filename, ok = QInputDialog.getText(self.view, 'Введите имя файла', 'Имя файла:')
+        if ok and filename:
+            save_to_json(self.files, filename)

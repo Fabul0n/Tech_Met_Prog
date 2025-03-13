@@ -23,11 +23,15 @@ class MainWindow(QMainWindow):
         self.delete_button = QPushButton("Удалить выбранную строку")
         self.delete_button.clicked.connect(self.controller.delete_selected)
 
+        self.save_to_file_button = QPushButton("Сохранить в файл")
+        self.save_to_file_button.clicked.connect(self.controller.save_to_file)
+
         layout = QVBoxLayout()
         layout.addWidget(self.table)
         layout.addWidget(self.add_button)
         layout.addWidget(self.add_from_file_button)
         layout.addWidget(self.delete_button)
+        layout.addWidget(self.save_to_file_button)
 
         container = QWidget()
         container.setLayout(layout)

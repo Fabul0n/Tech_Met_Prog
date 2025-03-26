@@ -3,6 +3,7 @@ from datetime import datetime
 from pydantic import ValidationError
 
 from .file_models import CustomFile, TxtFile, MP4File
+from .logger import error_logger as logger
 
 
 def parse_json(filename: str):
@@ -19,6 +20,5 @@ def parse_json(filename: str):
                     try:
                         ls.append(CustomFile(**value))
                     except ValidationError as e:
-                        print(value)
-    print(ls)
+                        logger.error(f'Format validation error. Unknown format. Input: {value}', exc_info=True)
     return ls

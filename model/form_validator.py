@@ -1,4 +1,5 @@
 from enum import Enum
+from .logger import error_logger as logger
 
 class Fields(Enum):
     name = 'Название файла'
@@ -10,7 +11,10 @@ class Fields(Enum):
     resolution = 'Разрешение'
 
 def validate_data(data: dict):
-    for key, value in data.items():
-        if not value:
-            return False, f"Поле '{Fields[key].value}' не может быть пустым."
-    return True, ""
+    try:
+        for key, value in data.items():
+            if not value:
+                return False, f"Поле '{Fields[key].value}' не может быть пустым."
+        return True, ""
+    except Exception as e:
+        logger.error(f'Error while validating form. Value: {data}')

@@ -21,4 +21,5 @@ def parse_json(filename: str):
                         ls.append(CustomFile(**value))
                     except ValidationError as e:
                         logger.error(f'Format validation error. Unknown format. Input: {value}', exc_info=True)
+    print(ls)
     return ls

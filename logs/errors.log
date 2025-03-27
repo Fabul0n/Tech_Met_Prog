@@ -92,3 +92,483 @@ duration
 resolution
   Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
     For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:22:36,270 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:23:32,371 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:23:42,676 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:24:37,824 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:25:17,395 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:30:27,178 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 09:30:33,358 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:10:16,399 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:12:59,341 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:17:33,329 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:17:50,254 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:20:22,361 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:21:53,098 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:22:12,067 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:22:32,584 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:22:38,245 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:23:37,402 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:24:54,364 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:25:20,508 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:26:17,324 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:26:26,594 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:29:09,117 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:34:22,631 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+2025-03-27 10:35:19,547 - ERROR - Format validation error. Unknown format. Input: {'names': 'ojnasd', 'creation_date': '2024.05.12', 'size': 4124, 'duration': 412442, 'resolution': '1280x720'}
+Traceback (most recent call last):
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/model/file_parser.py", line 21, in parse_json
+    ls.append(CustomFile(**value))
+              ~~~~~~~~~~^^^^^^^^^
+  File "/Users/fabulon/Documents/repos/Tech_Met_Prog/venv/lib/python3.13/site-packages/pydantic/main.py", line 214, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 4 validation errors for CustomFile
+name
+  Field required [type=missing, input_value={'names': 'ojnasd', 'crea...resolution': '1280x720'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.10/v/missing
+names
+  Extra inputs are not permitted [type=extra_forbidden, input_value='ojnasd', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+duration
+  Extra inputs are not permitted [type=extra_forbidden, input_value=412442, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
+resolution
+  Extra inputs are not permitted [type=extra_forbidden, input_value='1280x720', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.10/v/extra_forbidden
